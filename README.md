@@ -24,4 +24,4 @@ img_rgb = [cv2.imread(file) for file in glob.glob("")]
 
 names = [os.path.basename(x) for x in glob.glob("")]
 
-```
+
