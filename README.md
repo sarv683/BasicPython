@@ -47,3 +47,23 @@ pd.set_option('display.height', 1000)
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 500)
 pd.set_option('display.width', 1000)
+
+```
+
+4. Basics of Plotting/Visualization
+```
+plot_distribution( titanic , var = 'Age' , target = 'Survived' , row = 'Sex' )
+plot_correlation_map( titanic )
+
+Missing variables : 
+
+# Create dataset
+imputed = pd.DataFrame()
+
+# Fill missing values of Age with the average of Age (mean)
+imputed[ 'Age' ] = full.Age.fillna( full.Age.mean() )
+
+# Fill missing values of Fare with the average of Fare (mean)
+imputed[ 'Fare' ] = full.Fare.fillna( full.Fare.mean() )
+
+imputed.head()
