@@ -1,0 +1,10 @@
+Creating Enums : 
+# To note : Comparisions not directly, but by passing the parameter to the enum class, direct does not work.
+class test(Enum):
+    a = 'hello'
+    b  =  'sad'
+
+if __name__ == "__main__":
+    a = input("Enter name ")
+    if(test(a) is test.a):
+        print("correct name")
